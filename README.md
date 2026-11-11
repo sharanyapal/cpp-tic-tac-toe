@@ -1,34 +1,31 @@
-# Tic-Tac-Toe Game
+# Tic-Tac-Toe
 
-Two-player command-line Tic-Tac-Toe game with historical compiler variants.
+A two-player grid game with the original turn rules and win detection.
 
-This repository contains the original files from a supplied collection, preserved without changing the source code.
+## Run in your browser (no setup)
 
-## Contents
+**Open [`run-in-browser.html`](run-in-browser.html)** or double-click [`docs/index.html`](docs/index.html) after extracting the repository. You can also deploy the `docs/` folder to any static host.
 
-- `tic-tac-toe-turbo-cplusplus.cpp`
-- `tic-tac-toe-visual-cplusplus.cpp`
+> The browser playground is an independently written **JavaScript adaptation** of this repository's original C++ logic. It is not a C++ interpreter or WebAssembly binary. Original C++ sources are retained unchanged, and the HTML, CSS and JS demo is immediately usable offline.
 
-## Build notes
+### Static GitHub Pages
 
-### Modern compiler variant
-The file `tic-tac-toe-visual-cplusplus.cpp` passed a **syntax-only C++17 compiler check** using `g++` in the packaging environment. To compile it with GCC:
+Go to **Settings → Pages → Build and deployment → Deploy from a branch**; choose `main` and `/docs`, then Save. Your site's intended address is `https://sharanyapal.github.io/cpp-tic-tac-toe/` after GitHub confirms a successful deployment.
 
-```bash
-g++ -std=c++17 "tic-tac-toe-visual-cplusplus.cpp" -o app
-./app
-```
+The previous WebAssembly GitHub Actions workflow is not required for this standalone browser build. The included bulk upload script removes just that previous demo workflow and the superseded `web/` adapter from the **eight named repositories**, without deleting other project files.
 
-This is a compile check, **not** a functional test. Some programs write relative `.DAT` files; run them in an appropriate working directory.
+### Original C++ source
 
-## Notes
+- [tic-tac-toe-visual-cplusplus.cpp](tic-tac-toe-visual-cplusplus.cpp)
+- All other historical C++, data and document files are kept unchanged.
 
-- The `.DAT` files (where present) are historical sample records included with the source, **not** Git LFS requirements. Review their contents before making this repo public.
-- `.doc` files (where present) are archived output screenshots/examples, not modern documentation.
-- Original author/contributor names and historical metadata may appear in the supplied files. No new ownership or open-source license is claimed. Check redistribution rights before public release.
-- Code is provided as-is. No claims of production security or cross-platform compatibility.
+### Browser features
 
+- Interactive terminal-style output with keyboard input, restart, and downloadable transcript
+- Games follow the original scoring, turns and rule logic
+- Data apps use `localStorage` for records within the same browser, replacing local `.DAT` files; records can be cleared explicitly
+- Files: `docs/index.html`, `docs/style.css`, `docs/terminal.js`, `docs/program.js`
 
-## Run original C++ in your browser
+### Note
 
-[Interactive WebAssembly playground](https://sharanyapal.github.io/cpp-tic-tac-toe/) compiles the original C++ with browser adapters under `web/`. Enable **Settings → Pages → Build and deployment → GitHub Actions** to publish. The original C++ source is unchanged.
+This repository contains archived, third-party classroom-style C++ examples from a previously supplied collection. Review attribution and redistribution rights before publishing as your own original work.
