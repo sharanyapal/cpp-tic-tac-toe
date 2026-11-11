@@ -27,3 +27,8 @@ This is a compile check, **not** a functional test. Some programs write relative
 - `.doc` files (where present) are archived output screenshots/examples, not modern documentation.
 - Original author/contributor names and historical metadata may appear in the supplied files. No new ownership or open-source license is claimed. Check redistribution rights before public release.
 - Code is provided as-is. No claims of production security or cross-platform compatibility.
+
+
+## Run original C++ in your browser
+
+[Interactive WebAssembly playground](https://sharanyapal.github.io/cpp-tic-tac-toe/) compiles the original C++ with browser adapters under `web/`. Enable **Settings → Pages → Build and deployment → GitHub Actions** to publish. The original C++ source is unchanged.
