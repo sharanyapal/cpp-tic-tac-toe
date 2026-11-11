@@ -1,5 +1,45 @@
 # Tic-Tac-Toe
 
+> **Nine squares. Two players. One winning line.**
+
+**Classic console C++** · **Strategy game** · **Algorithm & state practice**
+
+---
+
+## The program
+
+A two-player grid game with the original turn rules and win detection.
+
+**Explore:** Track turns, occupied squares, three-in-a-row and draw handling.
+
+## Files
+
+| Path | Purpose |
+|:--|:--|
+| [`docs`](./docs) | Additional project resources |
+| [`run-in-browser.html`](./run-in-browser.html) | Additional project resources |
+| [`tic-tac-toe-turbo-cplusplus.cpp`](./tic-tac-toe-turbo-cplusplus.cpp) | Original C++ source file |
+| [`tic-tac-toe-visual-cplusplus.cpp`](./tic-tac-toe-visual-cplusplus.cpp) | Original C++ source file |
+
+
+## Running it
+
+Read the C++ entry point in the source file, then compile using an appropriate C++ toolchain. Some original source variants target Turbo C++/DOS and may need compatibility adjustments before modern compilation.
+
+## What to study
+
+- Input validation and console output.
+- State transitions and termination conditions.
+- Porting older compiler-specific code without changing game or business rules.
+
+## Usage boundary
+
+This is an educational console program. Use invented data for testing, not personal records or real financial information.
+
+<details><summary><strong>Original project guide (preserved)</strong></summary>
+
+# Tic-Tac-Toe
+
 A two-player grid game with the original turn rules and win detection.
 
 ## Run in your browser (no setup)
@@ -29,3 +69,9 @@ The previous WebAssembly GitHub Actions workflow is not required for this standa
 ### Note
 
 This repository contains archived, third-party classroom-style C++ examples from a previously supplied collection. Review attribution and redistribution rights before publishing as your own original work.
+
+</details>
+
+---
+
+<sub>Browse [all C++ and engineering repositories](https://github.com/sharanyapal?tab=repositories).</sub>
